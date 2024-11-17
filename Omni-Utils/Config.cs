@@ -26,20 +26,20 @@ namespace Omni_Utils
             {
                 UseCassieAnnouncement=true,
                 SquadName= "minutemen",
-                SquadType=Respawning.SpawnableTeamType.NineTailedFox,
-                EntranceAnnouncement = $"MTFUnit epsilon 11 designated %division% hasentered AllRemaining",
-                EntranceAnnouncementSubs = $"Mobile Task Force Unit Epsilon-11 %divison% has entered the facility.<split>All remaining personnel are advised to proceed with standard evacuation protocols until an MTF squad reaches your destination.",
+                SquadType=SpawnableTeamType.NineTailedFox,
+                EntranceAnnouncement = $"MTFUnit delta 4 designated %division% hasentered AllRemaining",
+                EntranceAnnouncementSubs = $"Mobile Task Force Unit Delta-4, designated %divison% has entered the facility.<split>All remaining personnel are advised to proceed with standard evacuation protocols until an MTF squad reaches your destination.",
                 customCaptain=new OverallRoleType
                 {
-                    RoleId=12,RoleType=RoleVersion.BaseGameRole
+                    RoleId=1101,RoleType=RoleVersion.UcrRole
                 },
                 customSergeant=new OverallRoleType
                 {
-                    RoleId=11,RoleType=RoleVersion.BaseGameRole
+                    RoleId=1102,RoleType=RoleVersion.UcrRole
                 },
                 customPrivate=new OverallRoleType
                 {
-                    RoleId=13,RoleType=RoleVersion.BaseGameRole
+                    RoleId=1103,RoleType=RoleVersion.UcrRole
                 },
             },
             new CustomSquad()
@@ -104,9 +104,13 @@ namespace Omni_Utils
             { new OverallRoleType{RoleId=1104,RoleType=RoleVersion.UcrRole},
                 "goi_anchorage_pd" },
             {new OverallRoleType{RoleId=7,RoleType=RoleVersion.UcrRole},"civil_o5" },
-            {new OverallRoleType{RoleId=11,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
-            {new OverallRoleType{RoleId=12,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
-            {new OverallRoleType{RoleId=13,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
+            {new OverallRoleType{RoleId=11,RoleType=RoleVersion.BaseGameRole}, "mtf_epsilon11" },
+            {new OverallRoleType{RoleId=12,RoleType=RoleVersion.BaseGameRole}, "mtf_epsilon11" },
+            {new OverallRoleType{RoleId=13,RoleType=RoleVersion.BaseGameRole}, "mtf_epsilon11" },
+
+            {new OverallRoleType{RoleId=1101,RoleType=RoleVersion.BaseGameRole}, "mtf_delta4" },
+            {new OverallRoleType{RoleId=1102,RoleType=RoleVersion.BaseGameRole}, "mtf_delta4" },
+            {new OverallRoleType{RoleId=1103,RoleType=RoleVersion.BaseGameRole}, "mtf_delta4" },
         };
         public Dictionary<RoleTypeId, int> InternalScpTerminationAnnouncementIndex { get; set; } = new Dictionary<RoleTypeId, int>
         {
@@ -116,9 +120,12 @@ namespace Omni_Utils
         {
             {"civil_o5",
                 new CustomAnnouncement{words="%subject% terminated by o5 personnel", translation="%subject% terminated by O5 Personnel."}},
-            {"mtf_e11" ,
+            {"mtf_epsilon11" ,
                 new CustomAnnouncement{words="%subject% containedsuccessfully by mtfunit epsilon 11", translation=
                     "%subject% contained successfully by Mobile Task Force Unit Epsilon-11."} },
+            {"mtf_delta4" ,
+                new CustomAnnouncement{words="%subject% containedsuccessfully by mtfunit delta 4", translation=
+                    "%subject% contained successfully by Mobile Task Force Unit Delta-4."} },
             { "goi_anchorage_pd" ,
                 new CustomAnnouncement{words="%subject% terminated by an core jam_40_2 agent p d" ,translation="%subject% terminated by Anchorage PD." } },
         };
