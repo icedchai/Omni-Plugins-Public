@@ -103,6 +103,7 @@ namespace Omni_Utils
         {
             { new OverallRoleType{RoleId=1104,RoleType=RoleVersion.UcrRole},
                 "goi_anchorage_pd" },
+            {new OverallRoleType{RoleId=7,RoleType=RoleVersion.UcrRole},"civil_o5" },
             {new OverallRoleType{RoleId=11,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
             {new OverallRoleType{RoleId=12,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
             {new OverallRoleType{RoleId=13,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
@@ -113,6 +114,8 @@ namespace Omni_Utils
         };
         public Dictionary<string, CustomAnnouncement> ScpTerminationCassieAnnouncements { get; set; } = new Dictionary<string, CustomAnnouncement>
         {
+            {"civil_o5",
+                new CustomAnnouncement{words="%subject% terminated by o5 personnel", translation="%subject% terminated by O5 Personnel."}},
             {"mtf_e11" ,
                 new CustomAnnouncement{words="%subject% containedsuccessfully by mtfunit epsilon 11", translation=
                     "%subject% contained successfully by Mobile Task Force Unit Epsilon-11."} },
