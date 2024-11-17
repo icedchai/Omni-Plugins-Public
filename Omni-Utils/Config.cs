@@ -94,6 +94,9 @@ namespace Omni_Utils
             {new OverallRoleType { RoleId =(sbyte) RoleTypeId.Scp3114 ,
                 RoleType=RoleVersion.BaseGameRole},
                 new CustomAnnouncement { words = "scp 3 1 1 4", translation = "SCP-3114" } },
+            {new OverallRoleType{RoleId=7,RoleType=RoleVersion.UcrRole},
+                
+                new CustomAnnouncement{words="o5 personnel", translation="O5 Personnel"}},
         };
         [Description("Use %subject% in the announcements for the termination's name. First int is Ucr ID, second int is Announcement index from cassie_announcements")]
         public Dictionary<OverallRoleType, string> ScpTerminationAnnouncementIndex { get; set; } = new Dictionary<OverallRoleType, string>
@@ -101,6 +104,8 @@ namespace Omni_Utils
             { new OverallRoleType{RoleId=1104,RoleType=RoleVersion.UcrRole},
                 "goi_anchorage_pd" },
             {new OverallRoleType{RoleId=11,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
+            {new OverallRoleType{RoleId=12,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
+            {new OverallRoleType{RoleId=13,RoleType=RoleVersion.BaseGameRole}, "mtf_e11" },
         };
         public Dictionary<RoleTypeId, int> InternalScpTerminationAnnouncementIndex { get; set; } = new Dictionary<RoleTypeId, int>
         {
