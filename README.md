@@ -6,3 +6,6 @@ Omni-2 plugins contain several roleplay utilities, such as:
 - certain commands are changed and overridden
 - Jump Stamina drain
 - Configurable custom spawnwaves
+
+## REQUIRES:
+UncomplicatedCustomRoles 4.0.0<=
