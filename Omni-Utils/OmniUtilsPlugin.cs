@@ -107,8 +107,6 @@ namespace Omni_Utils
             Map.AnnouncingNtfEntrance += EventHandler.OnNTFAnnounced;
             Map.AnnouncingScpTermination += EventHandler.OnAnnouncingScpTermination;
             Server.RespawningTeam += EventHandler.OnSpawnWave;
-
-            Item.UsingRadioPickupBattery += EventHandler.OnPickupRadioDrain;
         }
 
         private void UnregisterEvents()
@@ -129,8 +127,6 @@ namespace Omni_Utils
             Map.AnnouncingNtfEntrance -= EventHandler.OnNTFAnnounced;
             Map.AnnouncingScpTermination -= EventHandler.OnAnnouncingScpTermination;
             Server.RespawningTeam -= EventHandler.OnSpawnWave;
-
-            Item.UsingRadioPickupBattery -= EventHandler.OnPickupRadioDrain;
             EventHandler = null;
 
         }

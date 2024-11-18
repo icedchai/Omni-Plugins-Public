@@ -67,10 +67,6 @@ namespace Omni_Utils.EventHandlers
         public void OnTeslaBooming(TriggeringTeslaEventArgs e)
         {
             e.IsAllowed = false;
-        }        
-        public void OnPickupRadioDrain(UsingRadioPickupBatteryEventArgs e)
-        {
-            e.Drain = -10;
         }
        
         public void OnChangingItem(ChangingItemEventArgs e)
